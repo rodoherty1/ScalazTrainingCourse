@@ -14,11 +14,11 @@ resolvers ++= Seq(
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.7.1")
 
 val scalacheck = Seq(
-    "org.scalacheck" %% "scalacheck" % "1.12.2"
+    "org.scalacheck" %% "scalacheck" % "1.13.4"
 )
 
 val scalatest = Seq(
-    "org.scalatest" %% "scalatest" % "2.2.4"
+    "org.scalatest" %% "scalatest" % "3.0.1"
 )
 
 val doobie = Seq(
@@ -33,7 +33,7 @@ val akkaV = "2.4.4"
 
 val akkaStreamV = "2.0-M2"
 
-val scalazV = "7.1.3"
+val scalazV = "7.1.12"
 
 val scalazStreamV = "0.8"
 
@@ -70,6 +70,6 @@ val ammonite = Seq(
   "com.lihaoyi" % "ammonite-repl" % ammoniteV % "test" cross CrossVersion.full
 )
 
-libraryDependencies ++= scalacheck ++ scalatest ++ scalaz ++ argonaut ++ scalazStream
+libraryDependencies ++= scalacheck ++ scalatest ++ scalaz ++ scalazStream
 
 //initialCommands in console := "ammonite.repl.Main().run()"
